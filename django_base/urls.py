@@ -21,4 +21,5 @@ urlpatterns = [
     path('',include('base1.urls')),
     path('part2/',include('part2.urls')),
     path('part3/',include('part3.urls')),
+    path('part4/',include('part4.urls')),
 ]
