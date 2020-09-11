@@ -11,7 +11,7 @@ def second(request):
         form = forms.FormName(request.POST)
 
         if form.is_valid():
-            # Do Somethind Code
+            # Do Some Code
             print("VALIDATION SUCCES!")
             print("NAME: "+form.cleaned_data['name'])
             print("EMAIL: "+form.cleaned_data['email'])
