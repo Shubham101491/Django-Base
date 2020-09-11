@@ -4,7 +4,13 @@
 
 <h1>Template Tagging </h1>
 
+<!-- Using Same app URL -->
 <a href="{% url 'part5:new' %}">New Page</a><br>
-<a href="{% url 'admin:index' %}">Go To Admin</a>
+
+<!-- Link admin Page -->
+<a href="{% url 'admin:index' %}">Go To Admin</a><br>
+
+<!-- Link different app URL -->
+<a href="{% url 'forth' %}">Go To Diff App Page</a>
 
 {% endblock %}
