@@ -3,6 +3,13 @@
 
 <h1>New Page </h1>
 
+<h2>{{ text|cut:'world' }}</h2>
+<h2>{{ number|add:"99" }}</h2>
+
+
+<h2>{{ text|cut:'world' }}</h2>
+<h2>{{ number|add:"99" }}</h2>
+
 <a href="{% url 'part5:other' %}">Other Page</a>
 
 {% endblock %}

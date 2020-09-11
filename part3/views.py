@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django_base import settings
 
 from . import forms
 # from part3.forms import FormName
@@ -17,4 +16,4 @@ def second(request):
             print("EMAIL: "+form.cleaned_data['email'])
             print("TEXT: "+form.cleaned_data['text'])
 
-    return render(request,'part3/form.html',{"BASE_URL":settings.BASE_URL,'form':form})
+    return render(request,'part3/form.html',{'form':form})

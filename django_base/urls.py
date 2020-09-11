@@ -23,5 +23,5 @@ urlpatterns = [
     path('part3/',include('part3.urls')),
     path('part4/',include('part4.urls')),
     path('part5/',include('part5.urls')),
-
+    path('partsix/',include('partsix.urls')),
 ]

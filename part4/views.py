@@ -1,5 +1,4 @@
 from django.shortcuts import render,redirect
-from django_base import settings
 
 from part4.models import Register
 from part4.forms import RegisterForm
@@ -15,4 +14,4 @@ def forth(request):
                 pass
     else:
         form = RegisterForm()
-    return render(request,'part4/modelform.html',{"BASE_URL":settings.BASE_URL,'form':form})
+    return render(request,'part4/modelform.html',{'form':form})
