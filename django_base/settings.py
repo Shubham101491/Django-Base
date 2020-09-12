@@ -16,6 +16,8 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATES_DIR = os.path.join(BASE_DIR,'templates')
 STATIC_DIR = os.path.join(BASE_DIR,'static')
+MEDIA_DIR = os.path.join(BASE_DIR,'media')
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
@@ -44,6 +46,7 @@ INSTALLED_APPS = [
     'part4',
     'part5',
     'partsix',
+    'partseven',
 ]
 
 MIDDLEWARE = [
@@ -133,8 +136,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
+# Static Setup
 STATIC_URL = '/static/'
-
 STATICFILES_DIRS = [STATIC_DIR,]
 
+# Media Setup
+MEDIA_ROOT = MEDIA_DIR
+MEDIA_URL = '/media/'
+
+# Base URL Setup
 BASE_URL = 'http://127.0.0.1:8000/'

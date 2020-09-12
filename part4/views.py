@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
 
-from part4.models import Register
+from part4.models import Registration
 from part4.forms import RegisterForm
 
 def forth(request):
