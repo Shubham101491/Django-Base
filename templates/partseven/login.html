@@ -1,6 +1,17 @@
 {% extends 'base_tem/base_templates.html' %}
 {% block content %}
 
-<h1>Login Page </h1>
+<h2>Login Here </h2>
+
+<form action="{% url 'partseven:user_login' %}" method="POST">
+    {% csrf_token %}
+    <label for="username">Username:</label>
+    <input type="text" name="username" placeholder="Enter Username">
+
+    <label for="password">Password</label>
+    <input type="password" name="password">
+
+    <input type="submit" name="" value="Login">
+</form>
 
 {% endblock %}

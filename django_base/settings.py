@@ -144,5 +144,8 @@ STATICFILES_DIRS = [STATIC_DIR,]
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
 
+# Login Setup
+LOGIN_URL = '/basic_app/user_login'
+
 # Base URL Setup
 BASE_URL = 'http://127.0.0.1:8000/'
