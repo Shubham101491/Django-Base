@@ -27,5 +27,6 @@ urlpatterns = [
     path('part5/',include('part5.urls')),
     path('partsix/',include('partsix.urls')),
     path('partseven/',include('partseven.urls')),
-
+    path('parteight/',include('parteight.urls')),
+    
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

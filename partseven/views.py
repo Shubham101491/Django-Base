@@ -64,4 +64,4 @@ def user_login(request):
 def user_logout(request):
     logout(request)
     messages.info(request,"Logged out successfully!")
-    return redirect("http://127.0.0.1:8000/partseven/user_login/")
+    return redirect("http://127.0.0.1:8000/partseven/login/")
